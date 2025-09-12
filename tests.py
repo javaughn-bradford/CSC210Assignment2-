@@ -44,7 +44,7 @@ class TestSearchAlgorithms(unittest.TestCase):
         self.assertIsInstance(binary_time, float)
         self.assertGreater(linear_time, 0)
         self.assertGreater(binary_time, 0)
-        self.assertGreater(linear_time, binary_time)  # Binary search should be faster on average
+        self.assertGreater(linear_time, binary_time)  
     
     def test_random_int_list(self):
         length = 50
