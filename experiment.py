@@ -2,6 +2,7 @@
 # Run time trials of searching algorithms
 # Starter Code from CSC 210
 #Javaughn b
+# I had chat gpt do some touchups and on my linear and binary equations because they didn't add up 
 
 from random import randint
 from search import linear_search, binary_search
