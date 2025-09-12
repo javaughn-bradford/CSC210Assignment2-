@@ -1,18 +1,17 @@
-# search.py
-# Implementations of simple searching algorithms
-# Starter Code from CSC 210
-# Modified by: [Your Name]
+#search.py
 
-# This version of linear search looks for
-# *key* in *lst* and returns a boolean (True or False)
-# depending on if it found it
+# Modified by: javaughn bradford
+#linear search
 def linear_search(lst, key):
-    # YOUR CODE HERE
-    pass
-
-# This version of binary search looks for
-# *key* in *lst* and returns a boolean (True or False)
-# depending on if it found it
-def binary_search(data, key):
-    # YOUR CODE HERE
-    pass
+    for item in lst:
+        if item == key:
+            return True
+    return False
+#bineary search
+def binary_search(data, target):
+    low = 0
+    high = len(data) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if data[mid] == target:
+            return True
