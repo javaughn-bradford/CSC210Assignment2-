@@ -1,0 +1,11 @@
+1.What is the tightest bound Big-O runtime of random_int_list()?
+Please explain your answer (succinctly).
+    - The tightest would be O(n) because it would break break down the number in a certain time frame. 
+    - But as more numbers come into play, the longer it would take for the notation to break down and process the number 
+
+2.  What is the tightest bound Big-O runtime of time_trial()?
+    - The tightest bound runtime is O(n log n) because it is taking a fast time to do the searches compared to the others
+
+3. 32
+
+4. A class, a list, a dictionary  
