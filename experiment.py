@@ -28,19 +28,19 @@ def time_trial(num_trials, data_size, min_value, max_value):
     for _ in range(num_trials):
         search_key = randint(min_value, max_value)
 
-        # linear search(time)
+        #linear search
         start_time = perf_counter_ns()
         linear_search(data, search_key)
         end_time = perf_counter_ns()
         total_linear_time += (end_time - start_time)
 
-        # Time binary search
+        # binary search
         start_time = perf_counter_ns()
         binary_search(sorted_data, search_key)
         end_time = perf_counter_ns()
         total_binary_time += (end_time - start_time)
 
-    # Calculate averages
+    # averages
     avg_linear_time = total_linear_time / num_trials
     avg_binary_time = total_binary_time / num_trials
 
